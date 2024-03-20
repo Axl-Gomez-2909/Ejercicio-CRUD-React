@@ -160,7 +160,7 @@ function UsersList() {
     <table className="table table-bordered">
       <thead>
         <tr>
-          <th>ID</th>
+         
           <th>Avatar</th>
           <th>Nombre</th>
           <th>Correo</th>
@@ -170,8 +170,7 @@ function UsersList() {
       </thead>
       <tbody>
         {users.map(user => (
-          <tr key={user.id}>
-            <td>{user.id}</td>
+            <tr key={user.id}>
             <td><img src={user.avatar || 'https://i.imgur.com/LDOO4Qs.jpg'} alt="Avatar" className="rounded-circle" width="50" height="50" /></td>
             <td>{user.name}</td>
             <td>{user.email}</td>
